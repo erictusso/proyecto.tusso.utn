@@ -24,9 +24,11 @@ body {
     
     background-color: var(--negro2);
     font-family: Arial, Helvetica, sans-serif;
-    background-size:cover;
+    background-attachment: fixed;
     /* FONDO */
     background-image: url("roma.jpg");
+    background-size:cover;
+
 }
 
 .cabecera,
@@ -104,6 +106,9 @@ body {
     cursor: pointer;
 } 
 
+.buscar-index:hover{
+    cursor: pointer;
+}
 
 /*
     --------------------------------------------
@@ -255,5 +260,19 @@ body {
   section{display:inline-block;width:33%;
     margin-bottom: 150px;
 }
+
+
+
+
+
+
+
+
+/*
+    -------------------------------------
+           ACA COMIENZA LA PAGINA
+                DE  CONTACTO
+    -------------------------------------
+*/
 
 

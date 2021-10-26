@@ -1,0 +1,74 @@
+:root {
+    --naranja: #F90;
+    --amarillo: rgb(255, 217, 0);
+    --negro: #000;
+    --negro2: #444;
+    --gris: #BBB;
+    --blanco: #FFFFFF;
+    --espacio: 60px;
+    --azul: rgb(22, 9, 212);
+    --celeste:cornflowerblue;
+}
+
+body {
+    background-color: var(--negro2);
+    font-family: Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
+    /* FONDO */
+    background-image: url("roma.jpg");
+    background-size:cover;
+
+}
+
+form {
+    width: 450px;
+    height: 550px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+.titulo-contacto {
+    color: var(--blanco);
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 25px;
+    
+
+}
+input, textarea {
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border:none
+    
+}
+
+textarea {
+    min-height: 100px; /* minimo de alto */
+    max-height: 200px; /* maximo de alto */
+    max-width: 410px;
+    min-width: 410px;
+
+}
+.boton-enviar {
+
+    background:var(--gris)
+}
+
+.boton-enviar:hover {
+    cursor: pointer;
+}
+@media (min-width: 450px) {
+    body{
+        width: 100%;
+    }
+}
