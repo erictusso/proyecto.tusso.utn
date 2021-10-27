@@ -9,6 +9,54 @@
     --azul: rgb(22, 9, 212);
     --celeste:cornflowerblue;
 }
+.nav {
+    background-color: var(--celeste);
+    border-radius: 10px 10px 0 0;
+    /* Separo la navegación del siguiente elemento */
+    margin-bottom: var(--espacio);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-lista {
+    /* Sacamos los puntitos */
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.nav-lista_item {
+    flex-grow: 1;
+    text-align: center;
+    border-right: 5px solid whitesmoke;
+
+    
+    
+}
+
+.nav-link {
+    color: var(--blanco);
+    font-weight: bold;
+    /* Lo transformo en elemento de bloque para que la zona de click se agrande */
+    display: block;
+    /* Sacar el subrayado predeterminado */
+    text-decoration: none;
+}
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.nav-form {
+    cursor: pointer;
+} 
+
+.buscar-index:hover{
+    cursor: pointer;
+}
+
 
 body {
     background-color: var(--negro2);
