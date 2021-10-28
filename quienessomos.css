@@ -12,7 +12,7 @@
 .nav {
     background-color: var(--celeste);
     border-radius: 10px 10px 0 0;
-    /* Separo la navegación del siguiente elemento */
+   
     margin-bottom: var(--espacio);
     text-decoration: none;
     cursor: pointer;
@@ -25,7 +25,7 @@
     justify-content: space-around;
     padding-top: 10px;
     padding-bottom: 10px;
-    
+    margin: 0;
 }
 
 .nav-lista_item {
