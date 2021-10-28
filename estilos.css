@@ -25,7 +25,7 @@ body {
     background-color: var(--negro2);
     font-family: Arial, Helvetica, sans-serif;
     background-attachment: fixed;
-    /* FONDO */
+
     background-image: url("roma.jpg");
     background-size:cover;
 
@@ -65,19 +65,18 @@ body {
 .nav {
     background-color: var(--celeste);
     border-radius: 10px 10px 0 0;
-    /* Separo la navegación del siguiente elemento */
     margin-bottom: var(--espacio);
     text-decoration: none;
     cursor: pointer;
 }
 
 .nav-lista {
-    /* Sacamos los puntitos */
     list-style: none;
     display: flex;
     justify-content: space-around;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin: 0;
     
 }
 
@@ -93,9 +92,7 @@ body {
 .nav-link {
     color: var(--blanco);
     font-weight: bold;
-    /* Lo transformo en elemento de bloque para que la zona de click se agrande */
     display: block;
-    /* Sacar el subrayado predeterminado */
     text-decoration: none;
 }
 .nav-link:hover {
@@ -104,11 +101,10 @@ body {
 
 .nav-form {
     cursor: pointer;
+
 } 
 
-.buscar-index:hover{
-    cursor: pointer;
-}
+
 
 /*
     --------------------------------------------
@@ -119,6 +115,7 @@ body {
 .imagen {
     text-align: center;
     margin-bottom: 150px;
+    cursor: pointer;
 
 }
 
@@ -208,9 +205,9 @@ body {
     color: rgb(19, 19, 168);
 }
 .nav a:hover {
-    border-bottom: 5px solid ;
-    background-color: darkgray;
-    color: rgb(52, 48, 48);
+    
+    background-color: var(--celeste);
+    color: var(--blanco);
 }
 
 .card {
