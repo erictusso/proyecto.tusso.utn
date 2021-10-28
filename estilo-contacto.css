@@ -12,14 +12,14 @@
 .nav {
     background-color: var(--celeste);
     border-radius: 10px 10px 0 0;
-    /* Separo la navegación del siguiente elemento */
+    
     margin-bottom: var(--espacio);
     text-decoration: none;
     cursor: pointer;
 }
 
 .nav-lista {
-    /* Sacamos los puntitos */
+  
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -40,9 +40,9 @@
 .nav-link {
     color: var(--blanco);
     font-weight: bold;
-    /* Lo transformo en elemento de bloque para que la zona de click se agrande */
+   
     display: block;
-    /* Sacar el subrayado predeterminado */
+ 
     text-decoration: none;
 }
 .nav-link:hover {
@@ -117,6 +117,9 @@ textarea {
 }
 @media (min-width: 450px) {
     body{
+        width: 100%;
+    }
+    .contenedor {
         width: 100%;
     }
 }
