@@ -16,7 +16,7 @@ body {
     background-color: var(--negro2);
     font-family: Arial, Helvetica, sans-serif;
     background-attachment: fixed;
-    background-image: url("roma.jpg");
+    background-image: url("Images/roma.jpg");
     background-size:cover;
 }
 
