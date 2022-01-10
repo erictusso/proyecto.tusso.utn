@@ -52,7 +52,8 @@ body {
 }
 
 .contenedor {
-    width: 80%;
+    margin-top: 50px;
+    width: 100%;
     max-width: 1000px;
     margin: 0 auto;
     overflow: hidden;
@@ -83,6 +84,7 @@ body {
 
 .nav {
     background-color: var(--celeste);
+   
 
 }
 .nav__li {
@@ -219,9 +221,11 @@ body {
 }
 
 .titulo-youtube{
+    display: flex;
+    justify-content: center; 
     color: white;
     text-shadow: #FFFFFF;
-    margin-bottom: var(--espacio);
+    margin: var(--espacio);
 
 }
 
@@ -244,15 +248,34 @@ body {
     -------------------------------------
 */
 
+.experiencia {
+
+  margin-top: 50px;
+  
+}
 
 
 .experiencia-titulo {
+    display: flex;
+    justify-content: center; 
+    color: white;
+    text-shadow: #FFFFFF;
+    margin: 0 auto;
+    align-items: center;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 50px;
+    border: 3px solid var(--celeste);
 }
 .experiencia-info {
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
+    color: var(--blanco);
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 .experiencia-imagen {
     margin-right: 10px;
@@ -265,6 +288,7 @@ body {
     -------------------------------------
 */
 .news {
+    width: 90%;
     display: flex;
     align-items: flex-end;
     background-color: cornflowerblue;
@@ -275,6 +299,7 @@ body {
     border-radius: 25px;
     border: 10px solid beige ;
 
+
   
 }
 
@@ -282,22 +307,33 @@ body {
 .news-info p {
     padding-left: 60px;
     text-align: center;
+    
+    
+}
+
+@media only screen and ( max-width: 1050px) {
+  .news,
+  .news-info,
+  .news-info {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+  }
+  
 }
 
 .news-form {
     flex-grow: 1;
     text-align: right;
-    display: block;
+    
 }
 .news-form_boton {
-   
+    margin: 5px;
     background: none;
-    border: none;
+    border-radius: solid 1px var(--blanco);
     font-weight: bold;
-    
-    
     cursor: pointer;
-
     padding: 4px 10px;
 }
 .experiencia-texto {
@@ -309,22 +345,139 @@ body {
     color: var(--blanco);
 }
 
+.speaker {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: space-between; }
+    @media (max-width: 768px) {
+      .speaker {
+        flex-wrap: wrap; } }
+  
+  .featured-content {
+    position: relative;
+    height: 400px;
+    box-shadow: 10px 10px 0 0 var(--celeste);
+    transition: box-shadow 0.4s; }
+    .featured-content img {
+      width: 100%; }
+    .featured-content:last-of-type {
+      display: none; }
+      @media (min-width: 1600px) {
+        .featured-content:last-of-type {
+          display: block; } }
+    .featured-content:hover .featured-content__hide {
+      opacity: 1;
+      transition: opacity 0.8s; }
+    .featured-content:hover {
+      box-shadow: 10px 10px 0 0 #FFF; }
+    @media (max-width: 1024px) {
+      .featured-content {
+        height: auto;
+        width: 40%; }
+        .featured-content img {
+          height: 100%;
+          object-fit: cover; }
+        .featured-content .featured-content__hide {
+          height: 100%; }
+        .featured-content .featured-content__hide p:nth-of-type(2) {
+          display: none; } }
+    @media (max-width: 768px) {
+      .featured-content {
+        width: 90%;
+        margin: 3vh auto; } }
+  
+  .featured-content__hide {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 2em 2.5em;
+    width: 100%;
+    height: 400px;
+    background-color: var(--celeste);
+    transition: opacity 0.6s; }
+    .featured-content__hide h3 {
+      margin-bottom: 1em; }
+    .featured-content__hide h3, .featured-content__hide strong {
+      color: #3d3c96; }
+  
+  .speaker-gral {
+    display: flex;
+    max-width: 29.7%; }
+    .speaker-gral img {
+      max-width: 180px; }
+    .speaker-gral h3 {
+      margin-top: 0;
+      line-height: 1;
+      margin-bottom: 0.4em; }
+    @media (max-width: 1600px) {
+      .speaker-gral h3 {
+        font-size: 1em; }
+      .speaker-gral p {
+        font-size: 0.8em; }
+      .speaker-gral img {
+        max-width: 120px; } }
+    @media (max-width: 1100px) {
+      .speaker-gral {
+        flex-wrap: wrap;
+        width: 33.333%; }
+        .speaker-gral img {
+          margin-bottom: 0.4em;
+          max-width: 140px; } }
+    @media (max-width: 768px) {
+      .speaker-gral {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        margin: 3vh auto; } }
+  
+  .speaker-gral__content {
+    max-width: 80%;
+    padding-left: 20px; }
+    @media (max-width: 1100px) {
+      .speaker-gral__content {
+        padding-left: 0;
+        max-width: 100%; } }
+  
+  @media (max-width: 768px) {
+    .speaker-gral__img {
+      width: 100%; } }
+  
+  .row3 {
+    display: none;
+    opacity: 0; }
+  
+  .anima {
+    opacity: 1;
+    transition: opacity 0.4s, transform 0.5s; }
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.contaniner-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .card {
-    width: 340px;
-    border: 1px solid rgb(196, 196, 196);
-    border-radius: 30px 30px 0 0;
-    background-image:-moz-repeating-linear-gradient();
-    font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 2px 2px 5px 2px rgb(222, 222, 222);
-    margin: 30px;
-    display: inline-block;
-    
+    display: inline;
+    justify-content: center;
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+
 
   }
   
-  .card img {
-    max-width: 100%;
-   
+  .car-img {
+    background-color: var(--celeste);
+    height: 270px;
+    margin-bottom: 15px;
+    background-size: cover;
 
   }
   
@@ -348,8 +501,9 @@ body {
     border-radius: 30px;
     padding: 15px 20px;
     text-decoration: none;
-  }
-  
+  } 
+
+/*   
   .center {
     text-align: center;
   }
@@ -357,16 +511,7 @@ body {
     margin-bottom: 150px;
 }
 
-
-
-
-
-
-
-
-/*
-    -------------------------------------
-           ACA COMIENZA LA PAGINA
-                DE  CONTACTO
-    -------------------------------------
 */
+
+
+
